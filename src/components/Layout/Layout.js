@@ -1,15 +1,15 @@
 import React from 'react';
-import Aux from '../../hoc/Aux';
+import Auxs from '../../hoc/Auxs';
 import classes from './Layout.css';
 
 const layout = (props) => (
-    <Aux>
+    <Auxs>
         {/* <main className={classes.Content} > */}
         
         <main>
             {props.children}
         </main>
-    </Aux>
+    </Auxs>
 );
 
 export default layout;
