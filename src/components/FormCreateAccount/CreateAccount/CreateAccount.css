@@ -1,0 +1,10 @@
+.CreateAccount {
+    margin-top: 72px;
+    padding: 5px
+}
+
+.CreateAccount h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+

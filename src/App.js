@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 
-import Layout from './components/Layout/Layout';
-import Button_Wrap from './conteners/Button_Wrap/Button_Wrap';
+import NavigationBuilder from './conteners/NavigationBuilder/NavigationBuilder';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout>
-          <Button_Wrap />
-        </Layout>
+        <NavigationBuilder />
       </div>
     );
   }
