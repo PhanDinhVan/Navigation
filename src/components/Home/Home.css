@@ -1,0 +1,11 @@
+.Home {
+    margin-top: 72px;
+}
+
+.Home ul li {
+    width: 50%;
+}
+
+.Home ul li a {
+    border-radius: 0;
+}
