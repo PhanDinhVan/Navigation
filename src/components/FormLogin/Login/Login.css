@@ -1,6 +1,8 @@
 .Login {
     margin-top: 72px;
-    padding: 5px
+    padding: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .Login h4 {
