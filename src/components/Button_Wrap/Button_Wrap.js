@@ -5,6 +5,7 @@ import FormLogin from '../FormLogin/FormLogin';
 import FormCreateAccount from '../FormCreateAccount/FormCreateAccount';
 import ListButton from './ListButton/ListButton';
 import Home from '../Home/Home';
+import DetailPrivateSales from '../Home/DetailPrivateSales/DetailPrivateSales';
 
 
 const buttonsInstance = (props) => (
@@ -15,6 +16,7 @@ const buttonsInstance = (props) => (
             <Route path="/login" component={FormLogin} />
             <Route path="/create" component={FormCreateAccount} />
             <Route path="/home" component={Home} />
+            <Route path="/detailprivatesale" component={DetailPrivateSales} />
         </div>
     </Router>
 

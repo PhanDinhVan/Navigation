@@ -1,0 +1,31 @@
+.Label {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline;
+    padding: 0px;
+    line-height: 1;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: white;
+    /* border: 1px solid white; */
+    font-size: 25px;
+    border-bottom: 5px solid black;
+    border-radius: 0px;
+}
+
+.Grid {
+    margin-top: 2%;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.Thumbnail {
+    width: 64px;
+    height: auto;
+}
