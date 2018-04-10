@@ -12,24 +12,30 @@
     box-sizing: border-box;
     z-index: 90;
     border-bottom: 1px solid #ccc;
-   
-        /* position: absolute; */
-        /* top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-   
 }
 
 .Grid {
+    width: 100%;
     padding: 0px;
+    height: 100%;
 }
 
 .Col {
     padding: 0px;
+    height: 100%;
+    width: 100%;
 }
 
 .Thumbnail {
     padding: 0px;
+    height: 100%;
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+.Row {
+    height: 100%;
 }
 
 .TopLeft {
@@ -37,4 +43,8 @@
     top: 20px;
     left: 20px;
     width: 70px;
+}
+
+img {
+    height: 100% !important;
 }

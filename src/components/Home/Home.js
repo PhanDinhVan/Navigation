@@ -16,12 +16,18 @@ class Home extends Component {
         this.state = {
             detailPrivate: false,
             images: [
-                "image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"
+                "img1.png", "img2.png", "img3.png", "img4.png", "image5.jpg"
             ],
             imgMenuDetail: null,
-            news_image: [
-                "new1.jpg", "new2.png", "new3.jpg", "new4.jpg"
-            ]
+            objImg: [
+                {title: "Ronnie Fieg", content: "New collab with Moncler", img: "new1.png"},
+                {title: "Entertainment", content: "Lorem Ipsum Dolor Sit Amet", img: "new2.png"},
+                {title: "Fashion", content: "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet", img: "new3.png"},
+                {title: "Fashion", content: "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet", img: "new4.png"},
+            ],
+            detailNew: false,
+            key: 1,
+            imgNewDetail: null
         };
     }
 
@@ -33,6 +39,18 @@ class Home extends Component {
         });
     }
 
+    detailNews = (img) => {
+        this.setState({
+            detailNew: true,
+            imgNewDetail: img
+        });
+    }
+
+    handleSelect = (key) => {
+        // alert(`selected ${key}`);
+        this.setState({ key });
+    }
+
     render () {
 
         let redirectDetailPrivate = null;
@@ -42,18 +60,26 @@ class Home extends Component {
                 state: { referrer: this.state.imgMenuDetail }}}/>;
         }
 
+        let redirectDetailNew = null;
+        if (this.state.detailNew) {
+            redirectDetailNew = <Redirect to={{pathname: "/detailnew", 
+                state: { referrer: this.state.imgNewDetail }}}/>;
+        }
+
         return ( 
             <Auxs>
                 {redirectDetailPrivate}
+                {redirectDetailNew}
                 <Menu />
                 <div className={classes.Home} >
-                    <Tabs defaultActiveKey={1} animation={false} id="home" >
+                    <Tabs defaultActiveKey={1} animation={false} onSelect={this.handleSelect} id="home" >
                         <Tab eventKey={1} title="PRIVATE SALES" >
                             <PrivateSales clickDetailPrivte={this.detailPrivateSales}
                                 image={this.state.images} />
                         </Tab>
                         <Tab eventKey={2} title="NEWS" >
-                            <News a={this.state.news_image} />
+                            <News obj={this.state.objImg}
+                            clickDetailNew={this.detailNews} />
                         </Tab>
                     </Tabs>
                 </div>

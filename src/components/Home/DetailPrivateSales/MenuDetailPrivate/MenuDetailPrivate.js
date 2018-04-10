@@ -10,8 +10,8 @@ const menu = (props) => {
     return (
         <header className={classes.MenuDeatilPrivate} >
             <Grid bsClass={classes.Grid}>
-                <Row>
-                    <Col md={4} bsClass={classes.Col} >
+                <Row bsClass={classes.Row} >
+                    <Col md={4} className={classes.Col} >
                         <Thumbnail src={imageMenu} 
                             className={classes.Thumbnail}
                             onClick={props.clickDetailPrivte} >

@@ -1,0 +1,41 @@
+.DetailNew {
+    margin-top: 79px;
+    /* margin-left: 2%;
+    margin-right: 2%; */
+}
+
+.Text {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.Label {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline;
+    padding: 0px;
+    line-height: 1;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: white;
+    /* border: 1px solid white; */
+    font-size: 25px;
+    border-bottom: 5px solid black;
+    border-radius: 0px;
+    margin-left: 3%;
+}
+
+.Thumbnail {
+    display: block;
+    padding: 0px;
+    margin-bottom: 0px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: none;
+    border-radius: 0px;
+    transition: border .2s ease-in-out;
+    box-shadow: none;
+}
+
