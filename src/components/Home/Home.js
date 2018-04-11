@@ -7,6 +7,7 @@ import { Tabs, Tab } from "react-bootstrap";
 import PrivateSales from './PrivateSales/PrivateSales';
 import { Redirect } from "react-router-dom";
 import News from './News/News';
+import SideBar from '../SideBar/SideBar';
 
 class Home extends Component {
 
