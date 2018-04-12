@@ -1,0 +1,22 @@
+.CreateAccount {
+    margin-top: 72px;
+    padding: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.CreateAccount h4 {
+    text-transform: uppercase;
+}
+
+.Save {
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+}
+
+.NewAddress {
+    position: relative;
+}

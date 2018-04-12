@@ -84,7 +84,7 @@ class Login extends Component {
 
                 <div>
                     <Form inline>
-                        <FormGroup controlId="email">
+                        <FormGroup controlId="email" >
                             <FormControl tplaceholder="Your e-mail........."
                                 autoFocus
                                 type="email"

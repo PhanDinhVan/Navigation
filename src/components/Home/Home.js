@@ -83,7 +83,9 @@ class Home extends Component {
                             clickDetailNew={this.detailNews} />
                         </Tab>
                     </Tabs>
+                    
                 </div>
+                
             </Auxs>
         );
     }

@@ -1,18 +1,13 @@
 import React from 'react';
 
-import classes from './Header.css';
-import navigationLogo from '../../assets/images/amagumo-logo-small-black.png';
+import classes from './HeaderMyAccount.css';
+import navigationLogo from '../../../assets/images/amagumo-logo-small-black.png';
 
 const header = (props) => {
-    // console.log(props)
-    // if(localStorage.getItem('token')) {
-    //     alert("VOOO")
-    // } else {
-    //     alert("k Vooo")
-    // }
+    
     return (
         <header className={classes.Header} >
-            <a href="/" >
+            <a href="/home" >
                 <span 
                     className="glyphicon glyphicon-menu-left" 
                     style={{fontSize: '30px'}}

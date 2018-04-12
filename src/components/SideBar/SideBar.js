@@ -1,37 +1,76 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import classes from './SideBar.css'
 import Backdrop from '../UI/Backdrop/Backdrop';
 import Auxs from '../../hoc/Auxs';
+import { Redirect } from "react-router-dom";
 
-const sideBar = (props) => {
-    let attachedClasses = [classes.SideBar, classes.Close];
-    if( props.open ) {
-        attachedClasses = [classes.SideBar, classes.Open];
+class SideBar extends Component {
+
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+            logout: false
+        }
     }
-    return ( 
-        <Auxs>
-            <Backdrop show={props.open} clicked={props.closed} />
-            <div className={attachedClasses.join(' ')} >
-                <div>
-                    <h2>menu</h2>
-                    
-                    <span className="glyphicon glyphicon-remove" 
-                        style={{fontSize: '30px'}} onClick={props.closed}
-                            ></span>
+
+    handleLogout = () => {
+        this.setState({logout: true})
+    }
+
+    render () {
+
+        let attachedClasses = [classes.SideBar, classes.Close];
+        if( this.props.open ) {
+            attachedClasses = [classes.SideBar, classes.Open];
+        }
+
+        // logout
+        let redirect = null;
+        if (this.state.logout) {
+            redirect = <Redirect to="/login"/>;
+        }
+
+        return (
+            <Auxs>
+                {redirect}
+                <Backdrop show={this.props.open} clicked={this.props.closed} />
+                <div className={attachedClasses.join(' ')} >
+                    <div>
+                        <h2>menu</h2>
+                        
+                        <span className="glyphicon glyphicon-remove" 
+                            style={{fontSize: '30px', position: 'absolute', right: '10px', top: '20px'}} 
+                            onClick={this.props.closed}
+                                ></span>
+                    </div>
+                    <hr />
+                    <div className={classes.MenuContent} >
+                        <ul>
+                            <li><a href="/home" >Home</a></li>
+                            <li><a href="/myaccount" >My Account</a></li>
+                            <li><a>My Private Sales</a></li>
+                        </ul>
+                    </div>
+                    <div className={classes.MenuBottom} >
+                        <ul>
+                            <li><a href="/legalnotice" >Legal notice</a></li>
+                            <li><a href="/salespolicy" >Sales policy</a></li>
+                            <li><a href="/contact" >Contact</a></li>
+                            <li><a onClick={this.handleLogout}  >Sign off</a></li>
+                            
+                        </ul>
+                        <span className="glyphicon glyphicon-log-out" 
+                            style={{fontSize: '25px', 
+                                    position: 'absolute', 
+                                    right: '10px', top: '110px'}} 
+                            onClick={this.handleLogout}   ></span>
+                    </div>
                 </div>
-                <hr />
-                <div className={classes.MenuContent} >
-                    <ul>
-                        <li>Home</li>
-                        <li>My Account</li>
-                        <li>My Private Sales</li>
-                    </ul>
-                </div>
-            </div>
-        </Auxs>
-        
-    )
+            </Auxs>
+        )
+    }
 }
 
-export default sideBar;
+export default SideBar;

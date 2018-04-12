@@ -10,12 +10,12 @@ const contentHome = (props) => {
     return (
     <div>
         <Grid bsClass={classes.Grid}>
-            <Row>
+            <Row bsClass={classes.Row} >
                 {
                     props.image.map((img, idx) => {
                         const src_image = require('../../../assets/images/private_sale/' + img);
                         return (
-                            <Col md={4} key={`${img}-${idx}`} >
+                            <Col md={4} key={`${img}-${idx}`} bsClass={classes.Col} >
                                 <Thumbnail src={src_image}
                                 className={classes.Thumbnail} 
                                 onClick={() => props.clickDetailPrivte(img)} >
@@ -25,9 +25,9 @@ const contentHome = (props) => {
                         );
                     })
                 }
-                
             </Row>
         </Grid>
+        
     </div>
     
 )}; 

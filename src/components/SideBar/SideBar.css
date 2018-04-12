@@ -1,7 +1,7 @@
 .SideBar {
     position: fixed;
-    width: 280px;
-    max-width: 70%;
+    width: 75%;
+    max-width: 80%;
     height: 100%;
     left: 0;
     top: 0;
@@ -29,15 +29,33 @@
 h2 {
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 5%;
+    margin-left: 9%;
 }
 
 .MenuContent ul {
-    padding-left: 5%;
+    padding-left: 9%;
 }
 
-.MenuContent ul li {
+.MenuContent ul li a {
     font-weight: bold;
     text-transform: uppercase;
+    line-height: 3em;
+    color: black;
+}
+
+.MenuBottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.MenuBottom ul {
+    padding-left: 9%;
+}
+
+.MenuBottom ul li a {
+    font-weight: bold;
     line-height: 2.5em;
+    color: black;
 }

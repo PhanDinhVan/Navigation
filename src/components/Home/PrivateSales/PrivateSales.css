@@ -47,3 +47,11 @@ img {
     width: 100%;
     height: auto;
 }
+
+.Grid .Row {
+    margin: 0px;
+}
+
+.Grid .Row .Col {
+    padding: 0px;
+}
