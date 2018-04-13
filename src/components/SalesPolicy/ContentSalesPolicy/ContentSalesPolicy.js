@@ -3,11 +3,11 @@ import React from 'react';
 import { Label, Grid, Row, Col, Thumbnail } from "react-bootstrap";
 import classes from '../../../assets/css/menubottom.css'
 
-const contentLegalNotice = (props) => (
+const contentSalesPolicy = (props) => (
     <div className={classes.Content} >
         
         <Grid>
-            <Label className={classes.Label} > legal notice </Label>
+            <Label className={classes.Label} > sales policy </Label>
             <Row className="show-grid">
                 <Col md={4} className={classes.Col} >
                     <h4> 1. Lorem Ipsum Dolor Sit Amet </h4>
@@ -46,4 +46,4 @@ const contentLegalNotice = (props) => (
     </div>
 );
 
-export default contentLegalNotice;
+export default contentSalesPolicy;

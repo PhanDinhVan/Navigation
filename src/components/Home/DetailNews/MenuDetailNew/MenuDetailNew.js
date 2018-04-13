@@ -37,9 +37,7 @@ class MenuDetailNew extends Component {
                 </a>
                 
                 <div className={classes.Logo} >
-                    {/* <a href="/" > */}
-                        <img src={navigationLogo} alt="Navigation" />
-                    {/* </a> */}
+                    <img src={navigationLogo} alt="Navigation" />
                 </div>
             </header>
         )

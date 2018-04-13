@@ -49,12 +49,12 @@ class CreateAccount extends Component {
                         <ControlLabel>Your credentials</ControlLabel>{' '}
                         <p> E-mail</p>
                         <FormGroup controlId="formInlineName">
-                            <FormControl type="text" defaultValue="lorem.ipsum@gmail.com" />
+                            <FormControl type="email" defaultValue="lorem.ipsum@gmail.com" />
                         </FormGroup>{' '}
 
                         <p> Password </p>
                         <FormGroup controlId="formInlineEmail">
-                            <FormControl type="email" defaultValue="********" />
+                            <FormControl type="password" defaultValue="********" />
                         </FormGroup>{' '}
 
                         <ControlLabel>Your personal information</ControlLabel>{' '}
@@ -72,11 +72,11 @@ class CreateAccount extends Component {
                         </FormGroup>
                         
 
-                        <FormGroup controlId="formInlineName">
+                        <FormGroup controlId="formLorem">
                             <FormControl type="text" defaultValue="Lorem" />
                         </FormGroup>{' '}
 
-                        <FormGroup controlId="formInlineName">
+                        <FormGroup controlId="formIpsum">
                             <FormControl type="text" defaultValue="Ipsum" />
                         </FormGroup>{' '}
 

@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 
 import Auxs from '../../hoc/Auxs';
 import Menu from '../Home/Menu/Menu';
+import ContentSalesPolicy from '../SalesPolicy/ContentSalesPolicy/ContentSalesPolicy';
 
 class SalesPolicy extends Component {
     render () {
         return (
             <Auxs>
                 <Menu />
-                <h1 style={{marginTop: "72px"}} >SalesPolicy</h1>
+                <ContentSalesPolicy />
             </Auxs>
         )
     }

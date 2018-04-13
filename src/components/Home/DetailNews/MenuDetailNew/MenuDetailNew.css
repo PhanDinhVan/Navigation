@@ -26,3 +26,8 @@
 .Logo img {
     height: 100%;
 }
+
+.Menu a {
+    color: black;
+    padding-right: 10px;
+}
